@@ -79,7 +79,7 @@
       .nav-inner {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -87,29 +87,31 @@
       }
       .nav-logo {
         font-family: "Cinzel Decorative", serif;
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 4vw, 1.4rem);
         color: var(--gold);
         text-decoration: none;
         letter-spacing: 2px;
+        white-space: nowrap;
       }
       .nav-logo span {
         color: var(--rust-light);
       }
       .nav-links {
         display: flex;
-        gap: 1.8rem;
+        gap: clamp(1rem, 3vw, 1.8rem);
         list-style: none;
         align-items: center;
       }
       .nav-links a {
         font-family: "Cinzel", serif;
-        font-size: 0.78rem;
+        font-size: clamp(0.65rem, 2vw, 0.78rem);
         color: var(--text-on-dark);
         text-decoration: none;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         transition: color 0.3s;
         position: relative;
+        white-space: nowrap;
       }
       .nav-links a::after {
         content: "";
@@ -203,19 +205,21 @@
 
       /* ── SECTION COMMON ── */
       section {
-        padding: 5rem 1.5rem;
+        padding: clamp(2rem, 8vw, 5rem) clamp(1rem, 5vw, 1.5rem);
       }
       .container {
         max-width: 1100px;
         margin: 0 auto;
+        width: 100%;
       }
       .container-narrow {
         max-width: 860px;
         margin: 0 auto;
+        width: 100%;
       }
       .section-header {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: clamp(2rem, 5vw, 4rem);
       }
       .section-label {
         font-family: "Cinzel", serif;
@@ -228,9 +232,10 @@
       }
       .section-title {
         font-family: "Cinzel Decorative", serif;
-        font-size: clamp(1.8rem, 4vw, 3rem);
+        font-size: clamp(1.5rem, 5vw, 3rem);
         color: var(--gold);
         margin-bottom: 1rem;
+        word-break: break-word;
       }
       .section-divider {
         width: 120px;
@@ -266,11 +271,10 @@
 
       /* ── BUTTONS ── */
       .btn-primary {
-        font-family: "Cinzel", serif;
-        font-size: 0.85rem;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 1rem 2.5rem;
+        padding: clamp(0.7rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2.5rem);
         background: linear-gradient(135deg, var(--rust), #a04415);
         color: var(--cream);
         border: 2px solid var(--gold-dark);
@@ -278,6 +282,7 @@
         transition: all 0.3s;
         clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
         display: inline-block;
+        white-space: nowrap;
       }
       .btn-primary:hover {
         background: linear-gradient(135deg, var(--gold-dark), var(--gold));
@@ -286,11 +291,10 @@
         box-shadow: 0 8px 25px rgba(201, 168, 76, 0.3);
       }
       .btn-secondary {
-        font-family: "Cinzel", serif;
-        font-size: 0.85rem;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 1rem 2.5rem;
+        padding: clamp(0.7rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2.5rem);
         background: transparent;
         color: var(--gold);
         border: 2px solid var(--gold-dark);
@@ -298,6 +302,7 @@
         transition: all 0.3s;
         clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
         display: inline-block;
+        white-space: nowrap;
       }
       .btn-secondary:hover {
         background: rgba(201, 168, 76, 0.1);
@@ -309,15 +314,15 @@
       footer {
         background: linear-gradient(180deg, #0d0805, #050302);
         border-top: 2px solid var(--gold-dark);
-        padding: 4rem 1.5rem 2rem;
+        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5rem) clamp(1rem, 3vw, 2rem);
       }
       .footer-inner {
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 3rem;
-        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: clamp(1.5rem, 5vw, 3rem);
+        margin-bottom: clamp(1.5rem, 3vw, 3rem);
       }
       .footer-brand .logo {
         font-family: "Cinzel Decorative", serif;
@@ -594,7 +599,7 @@
       }
       .hero-cta {
         display: flex;
-        gap: 1rem;
+        gap: clamp(0.5rem, 3vw, 1rem);
         justify-content: center;
         flex-wrap: wrap;
         animation: fadeUp 1s ease 0.8s both;
@@ -663,7 +668,7 @@
       .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: clamp(2rem, 5vw, 4rem);
         align-items: center;
       }
       .hoysala-emblem {
@@ -672,8 +677,8 @@
         align-items: center;
       }
       .emblem-outer {
-        width: 280px;
-        height: 280px;
+        width: clamp(180px, 40vw, 280px);
+        height: clamp(180px, 40vw, 280px);
         border: 2px solid var(--gold-dark);
         border-radius: 50%;
         display: flex;
@@ -690,8 +695,8 @@
         border-radius: 50%;
       }
       .emblem-inner {
-        width: 200px;
-        height: 200px;
+        width: clamp(120px, 30vw, 200px);
+        height: clamp(120px, 30vw, 200px);
         background: linear-gradient(
           135deg,
           var(--stone-mid),
@@ -712,7 +717,7 @@
         animation: rotateSlow 30s linear infinite reverse;
       }
       .emblem-symbol {
-        font-size: 4rem;
+        font-size: clamp(2.5rem, 10vw, 4rem);
         line-height: 1;
       }
       .about-text h3 {
@@ -750,8 +755,8 @@
       }
       .events-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1.2rem;
+        grid-template-columns: repeat(auto-fill, minmax(clamp(150px, 40vw, 200px), 1fr));
+        gap: clamp(0.8rem, 3vw, 1.2rem);
       }
       .event-card {
         background: linear-gradient(
@@ -761,7 +766,7 @@
         );
         border: 1px solid rgba(201, 168, 76, 0.2);
         border-top: 3px solid var(--gold-dark);
-        padding: 1.8rem 1.4rem;
+        padding: clamp(1rem, 4vw, 1.8rem) clamp(0.8rem, 3vw, 1.4rem);
         text-align: center;
         text-decoration: none;
         color: var(--cream);
@@ -794,7 +799,7 @@
         opacity: 1;
       }
       .event-icon {
-        font-size: 2.5rem;
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
         margin-bottom: 1rem;
         display: block;
       }
@@ -879,6 +884,18 @@
         .hoysala-emblem {
           display: none;
         }
+        .hero-pillars::before,
+        .hero-pillars::after {
+          width: 100px;
+        }
+      }
+      @media (max-width: 768px) {
+        .hero-content {
+          padding: 1rem;
+        }
+        .hoysala-features {
+          grid-template-columns: 1fr;
+        }
       }
       @media (max-width: 600px) {
         .events-grid {
@@ -891,10 +908,34 @@
         .schedule-table tbody td {
           padding: 0.7rem 0.8rem;
         }
+        section {
+          padding: 1.5rem 1rem;
+        }
+        .nav-inner {
+          padding: 0 0.75rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .events-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-title {
+          margin-top: 1rem;
+        }
+        .hero-scroll {
+          display: none;
+        }
+        .schedule-table {
+          font-size: 0.65rem;
+        }
       }
       @media (max-width: 420px) {
         .events-grid {
           grid-template-columns: 1fr;
+        }
+        .notice-strip {
+          font-size: 0.65rem;
+          padding: 0.4rem 0.5rem;
         }
       }
     </style>

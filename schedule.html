@@ -79,7 +79,7 @@
       .nav-inner {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -87,29 +87,31 @@
       }
       .nav-logo {
         font-family: "Cinzel Decorative", serif;
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 4vw, 1.4rem);
         color: var(--gold);
         text-decoration: none;
         letter-spacing: 2px;
+        white-space: nowrap;
       }
       .nav-logo span {
         color: var(--rust-light);
       }
       .nav-links {
         display: flex;
-        gap: 1.8rem;
+        gap: clamp(1rem, 3vw, 1.8rem);
         list-style: none;
         align-items: center;
       }
       .nav-links a {
         font-family: "Cinzel", serif;
-        font-size: 0.78rem;
+        font-size: clamp(0.65rem, 2vw, 0.78rem);
         color: var(--text-on-dark);
         text-decoration: none;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         transition: color 0.3s;
         position: relative;
+        white-space: nowrap;
       }
       .nav-links a::after {
         content: "";
@@ -267,10 +269,10 @@
       /* ── BUTTONS ── */
       .btn-primary {
         font-family: "Cinzel", serif;
-        font-size: 0.85rem;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 1rem 2.5rem;
+        padding: clamp(0.7rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2.5rem);
         background: linear-gradient(135deg, var(--rust), #a04415);
         color: var(--cream);
         border: 2px solid var(--gold-dark);
@@ -278,6 +280,7 @@
         transition: all 0.3s;
         clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
         display: inline-block;
+        white-space: nowrap;
       }
       .btn-primary:hover {
         background: linear-gradient(135deg, var(--gold-dark), var(--gold));
@@ -287,10 +290,10 @@
       }
       .btn-secondary {
         font-family: "Cinzel", serif;
-        font-size: 0.85rem;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 1rem 2.5rem;
+        padding: clamp(0.7rem, 3vw, 1rem) clamp(1.5rem, 5vw, 2.5rem);
         background: transparent;
         color: var(--gold);
         border: 2px solid var(--gold-dark);
@@ -298,6 +301,7 @@
         transition: all 0.3s;
         clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
         display: inline-block;
+        white-space: nowrap;
       }
       .btn-secondary:hover {
         background: rgba(201, 168, 76, 0.1);
@@ -309,15 +313,15 @@
       footer {
         background: linear-gradient(180deg, #0d0805, #050302);
         border-top: 2px solid var(--gold-dark);
-        padding: 4rem 1.5rem 2rem;
+        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5rem) clamp(1rem, 3vw, 2rem);
       }
       .footer-inner {
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 3rem;
-        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: clamp(1.5rem, 5vw, 3rem);
+        margin-bottom: clamp(1.5rem, 3vw, 3rem);
       }
       .footer-brand .logo {
         font-family: "Cinzel Decorative", serif;
