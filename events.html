@@ -244,14 +244,15 @@
           width: 100%;
           text-align: center;
         }
-        /* position hamburger absolutely inside the nav for consistent placement */
+        /* position hamburger fixed to viewport on mobile to avoid overflow */
         .hamburger {
           display: flex;
-          position: absolute;
+          position: fixed;
           right: 12px;
-          top: 50%;
-          transform: translateY(-50%);
+          top: 14px;
+          transform: none;
           margin-left: 0;
+          z-index: 1200;
         }
       }
       @media (max-width: 600px) {
