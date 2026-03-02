@@ -314,7 +314,8 @@
       footer {
         background: linear-gradient(180deg, #0d0805, #050302);
         border-top: 2px solid var(--gold-dark);
-        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5rem) clamp(1rem, 3vw, 2rem);
+        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5rem)
+          clamp(1rem, 3vw, 2rem);
       }
       .footer-inner {
         max-width: 1200px;
@@ -749,13 +750,30 @@
         color: var(--gold-light);
         letter-spacing: 1px;
       }
+      /* ABOUT IMAGE */
+      .about-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(1rem, 3vw, 2rem);
+      }
+      .about-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(201, 168, 76, 0.2);
+      }
       /* EVENTS */
       .events-section {
         background: var(--stone);
       }
       .events-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(clamp(150px, 40vw, 200px), 1fr));
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(clamp(150px, 40vw, 200px), 1fr)
+        );
         gap: clamp(0.8rem, 3vw, 1.2rem);
       }
       .event-card {
@@ -884,6 +902,9 @@
         .hoysala-emblem {
           display: none;
         }
+        .about-image {
+          margin-top: 1.5rem;
+        }
         .hero-pillars::before,
         .hero-pillars::after {
           width: 100px;
@@ -914,6 +935,14 @@
         .nav-inner {
           padding: 0 0.75rem;
         }
+        .about-image img {
+          max-width: 300px;
+          border-radius: 6px;
+        }
+        .about-text h3 {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
       }
       @media (max-width: 480px) {
         .events-grid {
@@ -927,6 +956,16 @@
         }
         .schedule-table {
           font-size: 0.65rem;
+        }
+        .about-image {
+          padding: 0.75rem;
+        }
+        .about-image img {
+          max-width: 250px;
+          border-radius: 4px;
+        }
+        .about-grid {
+          gap: clamp(1.5rem, 4vw, 2rem);
         }
       }
       @media (max-width: 420px) {
