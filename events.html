@@ -188,7 +188,9 @@
         nav {
           top: 4px;
         }
+        /* ensure hamburger can be positioned inside the nav */
         .nav-inner {
+          position: relative;
           padding: 0 0.5rem;
           height: 70px;
         }
@@ -242,8 +244,14 @@
           width: 100%;
           text-align: center;
         }
+        /* position hamburger absolutely inside the nav for consistent placement */
         .hamburger {
           display: flex;
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-left: 0;
         }
       }
       @media (max-width: 600px) {
@@ -370,7 +378,8 @@
       footer {
         background: linear-gradient(180deg, #0d0805, #050302);
         border-top: 2px solid var(--gold-dark);
-        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5rem) clamp(1rem, 3vw, 2rem);
+        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 1.5rem)
+          clamp(1rem, 3vw, 2rem);
       }
       .footer-inner {
         max-width: 1200px;
