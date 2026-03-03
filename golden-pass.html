@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register — Abhyudhaya 2026</title>
+    <title>Golden Pass — Abhyudhaya 2026</title>
     <link
       rel="icon"
       type="image/svg+xml"
@@ -201,7 +201,7 @@
           top: 78px;
           left: 0;
           right: 0;
-          width: 100vw;
+          width: 100%;
           max-height: calc(100vh - 78px);
           background: rgba(13, 8, 5, 0.98);
           flex-direction: column;
@@ -262,11 +262,12 @@
 
       /* ── SECTION COMMON ── */
       section {
-        padding: 5rem 1.5rem;
+        padding: clamp(2rem, 8vw, 5rem) clamp(1rem, 5vw, 1.5rem);
       }
       .container {
         max-width: 1100px;
         margin: 0 auto;
+        width: 100%;
       }
       .container-narrow {
         max-width: 860px;
@@ -540,22 +541,31 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='800' viewBox='0 0 160 800'%3E%3Crect x='60' y='0' width='40' height='800' fill='%23c9a84c' opacity='0.04'/%3E%3Crect x='40' y='8' width='80' height='12' fill='%23c9a84c' opacity='0.07'/%3E%3Crect x='48' y='20' width='64' height='7' fill='%23c9a84c' opacity='0.06'/%3E%3Cpath d='M60 35 Q50 50 45 65 L75 65 L75 35Z' fill='%23c9a84c' opacity='0.05'/%3E%3Cpath d='M100 35 Q110 50 115 65 L85 65 L85 35Z' fill='%23c9a84c' opacity='0.05'/%3E%3Cellipse cx='80' cy='115' rx='20' ry='12' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.12'/%3E%3Ccircle cx='80' cy='104' r='9' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.12'/%3E%3Cpath d='M71 124 Q66 133 63 140' stroke='%23c9a84c' stroke-width='0.8' fill='none' opacity='0.12'/%3E%3Cpath d='M89 124 Q94 133 97 140' stroke='%23c9a84c' stroke-width='0.8' fill='none' opacity='0.12'/%3E%3Ccircle cx='80' cy='185' r='16' fill='none' stroke='%23c9a84c' stroke-width='0.7' opacity='0.1'/%3E%3Ccircle cx='80' cy='185' r='9' fill='none' stroke='%23c9a84c' stroke-width='0.7' opacity='0.1'/%3E%3Ccircle cx='80' cy='185' r='3' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M80 169 L83 179 L80 183 L77 179Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M80 201 L83 191 L80 187 L77 191Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M64 185 L74 182 L78 185 L74 188Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M96 185 L86 182 L82 185 L86 188Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M80 215 Q62 228 80 242 Q98 256 80 270 Q62 284 80 298' stroke='%23c9a84c' stroke-width='0.6' fill='none' opacity='0.08' stroke-dasharray='3 3'/%3E%3Ccircle cx='80' cy='355' r='14' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.1'/%3E%3Ccircle cx='74' cy='350' r='3' fill='%23c9a84c' opacity='0.09'/%3E%3Ccircle cx='86' cy='350' r='3' fill='%23c9a84c' opacity='0.09'/%3E%3Cpath d='M74 360 Q80 365 86 360' stroke='%23c9a84c' stroke-width='0.8' fill='none' opacity='0.09'/%3E%3Cpolygon points='80,405 83,415 93,415 85,421 88,431 80,425 72,431 75,421 67,415 77,415' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.1'/%3E%3Ccircle cx='80' cy='475' r='7' fill='none' stroke='%23c9a84c' stroke-width='0.7' opacity='0.09'/%3E%3Cpath d='M80 482 L80 500' stroke='%23c9a84c' stroke-width='0.8' opacity='0.09'/%3E%3Cpath d='M80 488 L71 482 M80 488 L89 482' stroke='%23c9a84c' stroke-width='0.7' opacity='0.09'/%3E%3Cpath d='M80 500 L73 513 M80 500 L87 513' stroke='%23c9a84c' stroke-width='0.7' opacity='0.09'/%3E%3Cline x1='45' y1='75' x2='115' y2='75' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3Cline x1='45' y1='155' x2='115' y2='155' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3Cline x1='45' y1='330' x2='115' y2='330' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3Cline x1='45' y1='450' x2='115' y2='450' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
-        background-repeat: repeat-y;
-        background-size: 160px auto;
-        background-position: left center;
-        opacity: 0.45;
+        background:
+          radial-gradient(
+            circle at 20% 30%,
+            rgba(201, 168, 76, 0.03),
+            transparent 20%
+          ),
+          radial-gradient(
+            circle at 80% 70%,
+            rgba(201, 168, 76, 0.02),
+            transparent 15%
+          );
+        pointer-events: none;
+        z-index: 0;
       }
       .page-hero::after {
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='800' viewBox='0 0 160 800'%3E%3Crect x='60' y='0' width='40' height='800' fill='%23c9a84c' opacity='0.04'/%3E%3Crect x='40' y='8' width='80' height='12' fill='%23c9a84c' opacity='0.07'/%3E%3Crect x='48' y='20' width='64' height='7' fill='%23c9a84c' opacity='0.06'/%3E%3Cpath d='M60 35 Q50 50 45 65 L75 65 L75 35Z' fill='%23c9a84c' opacity='0.05'/%3E%3Cpath d='M100 35 Q110 50 115 65 L85 65 L85 35Z' fill='%23c9a84c' opacity='0.05'/%3E%3Cellipse cx='80' cy='115' rx='20' ry='12' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.12'/%3E%3Ccircle cx='80' cy='104' r='9' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.12'/%3E%3Cpath d='M71 124 Q66 133 63 140' stroke='%23c9a84c' stroke-width='0.8' fill='none' opacity='0.12'/%3E%3Cpath d='M89 124 Q94 133 97 140' stroke='%23c9a84c' stroke-width='0.8' fill='none' opacity='0.12'/%3E%3Ccircle cx='80' cy='185' r='16' fill='none' stroke='%23c9a84c' stroke-width='0.7' opacity='0.1'/%3E%3Ccircle cx='80' cy='185' r='9' fill='none' stroke='%23c9a84c' stroke-width='0.7' opacity='0.1'/%3E%3Ccircle cx='80' cy='185' r='3' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M80 169 L83 179 L80 183 L77 179Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M80 201 L83 191 L80 187 L77 191Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M64 185 L74 182 L78 185 L74 188Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M96 185 L86 182 L82 185 L86 188Z' fill='%23c9a84c' opacity='0.08'/%3E%3Cpath d='M80 215 Q62 228 80 242 Q98 256 80 270 Q62 284 80 298' stroke='%23c9a84c' stroke-width='0.6' fill='none' opacity='0.08' stroke-dasharray='3 3'/%3E%3Ccircle cx='80' cy='355' r='14' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.1'/%3E%3Ccircle cx='74' cy='350' r='3' fill='%23c9a84c' opacity='0.09'/%3E%3Ccircle cx='86' cy='350' r='3' fill='%23c9a84c' opacity='0.09'/%3E%3Cpath d='M74 360 Q80 365 86 360' stroke='%23c9a84c' stroke-width='0.8' fill='none' opacity='0.09'/%3E%3Cpolygon points='80,405 83,415 93,415 85,421 88,431 80,425 72,431 75,421 67,415 77,415' fill='none' stroke='%23c9a84c' stroke-width='0.8' opacity='0.1'/%3E%3Ccircle cx='80' cy='475' r='7' fill='none' stroke='%23c9a84c' stroke-width='0.7' opacity='0.09'/%3E%3Cpath d='M80 482 L80 500' stroke='%23c9a84c' stroke-width='0.8' opacity='0.09'/%3E%3Cpath d='M80 488 L71 482 M80 488 L89 482' stroke='%23c9a84c' stroke-width='0.7' opacity='0.09'/%3E%3Cpath d='M80 500 L73 513 M80 500 L87 513' stroke='%23c9a84c' stroke-width='0.7' opacity='0.09'/%3E%3Cline x1='45' y1='75' x2='115' y2='75' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3Cline x1='45' y1='155' x2='115' y2='155' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3Cline x1='45' y1='330' x2='115' y2='330' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3Cline x1='45' y1='450' x2='115' y2='450' stroke='%23c9a84c' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
-        background-repeat: repeat-y;
-        background-size: 160px auto;
-        background-position: right center;
-        opacity: 0.45;
-        transform: scaleX(-1);
+        background: radial-gradient(
+          circle at 80% 30%,
+          rgba(201, 168, 76, 0.02),
+          transparent 20%
+        );
+        pointer-events: none;
+        z-index: 1;
       }
       .page-hero-content {
         position: relative;
@@ -596,99 +606,150 @@
         color: var(--gold);
       }
 
-      .reg-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 1.2rem;
+      .rules-section {
+        background: var(--stone);
       }
-      .reg-card {
+      .rules-section .section-divider::after {
+        background: var(--stone);
+      }
+      .rule-list {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+      .rule-item {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1.2rem 0;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+        align-items: flex-start;
+      }
+      .rule-item:last-child {
+        border-bottom: none;
+      }
+      .rule-num {
+        font-family: "Cinzel Decorative", serif;
+        font-size: 1.5rem;
+        color: var(--gold-dark);
+        min-width: 3rem;
+        line-height: 1.2;
+      }
+      .rule-text {
+        color: rgba(240, 221, 176, 0.75);
+        line-height: 1.9;
+        font-size: 0.95rem;
+        font-weight: 300;
+      }
+
+      .form-section {
+        background: var(--stone-mid);
+      }
+      .form-card {
         background: linear-gradient(
           135deg,
-          var(--stone-mid),
-          rgba(61, 37, 16, 0.5)
+          rgba(61, 37, 16, 0.8),
+          rgba(42, 26, 14, 0.95)
         );
         border: 1px solid rgba(201, 168, 76, 0.2);
-        border-left: 4px solid var(--gold-dark);
-        padding: 1.8rem 1.5rem;
-        text-decoration: none;
-        color: var(--cream);
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-        transition: all 0.3s;
+        border-top: 3px solid var(--gold-dark);
+        padding: 3rem;
+        max-width: 780px;
+        margin: 0 auto;
       }
-      .reg-card:hover {
-        border-left-color: var(--gold);
-        transform: translateX(6px);
-        background: linear-gradient(
-          135deg,
-          rgba(61, 37, 16, 0.9),
-          rgba(92, 58, 30, 0.5)
-        );
-        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
-      }
-      .reg-icon {
-        font-size: 2.2rem;
-        min-width: 2.5rem;
-        text-align: center;
-      }
-      .reg-info h4 {
-        font-family: "Cinzel", serif;
-        font-size: 1rem;
-        color: var(--gold);
-        margin-bottom: 0.2rem;
-      }
-      .reg-info p {
-        font-size: 0.8rem;
-        color: rgba(240, 221, 176, 0.5);
-        font-weight: 300;
-      }
-      .reg-arrow {
-        margin-left: auto;
-        color: var(--gold-dark);
-        font-size: 1.2rem;
-        transition: transform 0.3s;
-      }
-      .reg-card:hover .reg-arrow {
-        transform: translateX(4px);
-        color: var(--gold);
-      }
-      .steps-grid {
+      .form-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
       }
-      .step-card {
-        text-align: center;
-        padding: 2rem 1rem;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
       }
-      .step-num {
-        font-family: "Cinzel Decorative", serif;
-        font-size: 2.5rem;
-        color: var(--gold-dark);
-        display: block;
-        margin-bottom: 1rem;
+      .form-group.full {
+        grid-column: 1 / -1;
       }
-      .step-title {
+      label {
         font-family: "Cinzel", serif;
-        font-size: 1rem;
-        color: var(--gold);
-        margin-bottom: 0.5rem;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        color: var(--gold-dark);
+        text-transform: uppercase;
       }
-      .step-desc {
-        font-size: 0.85rem;
-        color: rgba(240, 221, 176, 0.55);
-        font-weight: 300;
-        line-height: 1.7;
+      input,
+      select,
+      textarea {
+        background: rgba(20, 10, 5, 0.6);
+        border: 1px solid rgba(201, 168, 76, 0.15);
+        border-bottom: 2px solid rgba(201, 168, 76, 0.3);
+        color: var(--cream);
+        padding: 0.7rem 0.8rem;
+        font-family: "Lato", sans-serif;
+        font-size: 0.9rem;
+        width: 100%;
+        outline: none;
+        transition: border-color 0.3s;
+        border-radius: 0;
+        -webkit-appearance: none;
       }
-      @media (max-width: 700px) {
-        .steps-grid {
-          grid-template-columns: 1fr 1fr;
-        }
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: rgba(201, 168, 76, 0.4);
+        border-bottom-color: var(--gold);
       }
-      @media (max-width: 400px) {
-        .steps-grid {
+      input::placeholder {
+        color: rgba(240, 221, 176, 0.3);
+      }
+      select option {
+        background: var(--stone-mid);
+        color: var(--cream);
+      }
+      textarea {
+        resize: vertical;
+        min-height: 90px;
+      }
+      .form-submit {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 1rem 2.5rem;
+        background: linear-gradient(135deg, var(--rust), var(--rust-light));
+        color: var(--cream);
+        font-family: "Cinzel", serif;
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        border: 2px solid var(--gold-dark);
+        cursor: pointer;
+        transition: all 0.3s;
+        clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+        text-decoration: none;
+      }
+      .form-submit:hover {
+        background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+        color: var(--stone);
+        box-shadow: 0 8px 25px rgba(201, 168, 76, 0.3);
+      }
+      .success-msg {
+        display: none;
+        text-align: center;
+        padding: 1.5rem;
+        background: rgba(40, 100, 40, 0.15);
+        border: 1px solid rgba(80, 160, 80, 0.3);
+        border-left: 3px solid #6ab06a;
+        margin-top: 1.5rem;
+      }
+      .success-msg p {
+        font-family: "Cinzel", serif;
+        color: #8cd08c;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 600px) {
+        .form-grid {
           grid-template-columns: 1fr;
+        }
+        .form-card {
+          padding: 2rem 1.2rem;
         }
       }
     </style>
@@ -717,145 +778,168 @@
         </button>
       </div>
     </nav>
-    <div class="notice-strip">✦ Registrations Open · March 14-15, 2026 ✦</div>
+    <div class="notice-strip">✦ Golden Pass Available · March 2026 ✦</div>
     <section class="page-hero">
       <div class="page-hero-content">
-        <span class="page-hero-icon">📝</span>
-        <h1>Register</h1>
-        <p>Choose your competition. Carve your name.</p>
-        <p class="breadcrumb"><a href="index.html">Home</a> › Register</p>
+        <span class="page-hero-icon">🏅</span>
+        <h1>Golden Pass</h1>
+        <p>One pass, every event.</p>
+        <p class="breadcrumb"><a href="index.html">Home</a> › Golden Pass</p>
       </div>
     </section>
-    <section style="background: var(--stone-mid)">
+    <section class="info-section" style="background: var(--stone)">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">How It Works</span>
-          <h2 class="section-title">Registration Process</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="steps-grid">
-          <div class="step-card">
-            <span class="step-num">01</span>
-            <div class="step-title">Pick an Event</div>
-            <div class="step-desc">
-              Browse the eight competitions and choose the ones that match your
-              talent.
-            </div>
-          </div>
-          <div class="step-card">
-            <span class="step-num">02</span>
-            <div class="step-title">Fill the Form</div>
-            <div class="step-desc">
-              Complete the registration form with your hostel and contact
-              details.
-            </div>
-          </div>
-          <div class="step-card">
-            <span class="step-num">03</span>
-            <div class="step-title">Get Confirmation</div>
-            <div class="step-desc">
-              Receive your email confirmation with your registration number and
-              schedule.
-            </div>
-          </div>
-          <div class="step-card">
-            <span class="step-num">04</span>
-            <div class="step-title">Compete!</div>
-            <div class="step-desc">
-              Report on time, show your confirmation, and give it your best.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section style="background: var(--stone)">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Select Your Event</span>
-          <h2 class="section-title">Register Now</h2>
+          <span class="section-label">Unlock All</span>
+          <h2 class="section-title">What You Get</h2>
           <div class="section-divider"></div>
           <p class="section-desc">
-            Registrations are open for all eight competitions. You may register
-            for multiple events.
+            The Golden Pass grants entry to every competition and exclusive
+            goodies. Save time and register once for the entire festival.
           </p>
         </div>
-        <!-- golden pass added as separate page card -->
-        <div class="reg-grid">
-          <a href="golden-pass.html" class="reg-card"
-            ><span class="reg-icon">🏅</span>
-            <div class="reg-info">
-              <h4>Golden Pass</h4>
-              <p>All events</p>
+        <!-- Add additional content as desired -->
+      </div>
+    </section>
+    <section class="rules-section" style="background: var(--stone)">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Important Guidelines</span>
+          <h2 class="section-title">General Rules for Participants</h2>
+          <div class="section-divider" style="--stone: #2a1a0e"></div>
+        </div>
+        <div class="rule-list">
+          <div class="rule-item">
+            <div class="rule-num">01</div>
+            <div class="rule-text">
+              If a hostel willing to participate in each and every event, they
+              can avail GOLDEN PASS for a nominal price of Rs.349/-.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="singing.html" class="reg-card"
-            ><span class="reg-icon">🎤</span>
-            <div class="reg-info">
-              <h4>Singing</h4>
-              <p>March 15</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">02</div>
+            <div class="rule-text">
+              For each GOLDEN PASS, a hostel can participate in all the events
+              only once.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="badminton.html" class="reg-card"
-            ><span class="reg-icon">🏸</span>
-            <div class="reg-info">
-              <h4>Badminton</h4>
-              <p>March 18–19</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">03</div>
+            <div class="rule-text">
+              The golden passes are limited and any number of golden passes can
+              be purchased by one hostel. For further details please contact the
+              coordinators.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="chess.html" class="reg-card"
-            ><span class="reg-icon">♟️</span>
-            <div class="reg-info">
-              <h4>Chess</h4>
-              <p>March 16</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">04</div>
+            <div class="rule-text">Spot registration is not allowed.</div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">05</div>
+            <div class="rule-text">
+              Last date for registration is 12th March 2026.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="carrom.html" class="reg-card"
-            ><span class="reg-icon">🎯</span>
-            <div class="reg-info">
-              <h4>Carrom</h4>
-              <p>March 17</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">06</div>
+            <div class="rule-text">
+              Registered amount for events cannot be refunded.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="esports.html" class="reg-card"
-            ><span class="reg-icon">🎮</span>
-            <div class="reg-info">
-              <h4>E-Sports</h4>
-              <p>March 20</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">07</div>
+            <div class="rule-text">
+              An OVERALL CHAMPIONSHIP TROPHY will be awarded for a maximum
+              number of event won by a hostel.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="quiz.html" class="reg-card"
-            ><span class="reg-icon">🧠</span>
-            <div class="reg-info">
-              <h4>Quiz</h4>
-              <p>March 21</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">08</div>
+            <div class="rule-text">
+              Participants must be in the venue at least 15 minutes before the
+              event begins.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="codeathon.html" class="reg-card"
-            ><span class="reg-icon">💻</span>
-            <div class="reg-info">
-              <h4>Codeathon</h4>
-              <p>March 21</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">09</div>
+            <div class="rule-text">
+              If a participant or a team is failed to arrive at the venue after
+              30 minutes of beginning of the event, the respective participant
+              or team will be disqualified.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
-          <a href="treasure-hunt.html" class="reg-card"
-            ><span class="reg-icon">🗺️</span>
-            <div class="reg-info">
-              <h4>Treasure Hunt</h4>
-              <p>March 21</p>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">10</div>
+            <div class="rule-text">
+              Only participants are allowed inside the venue.
             </div>
-            <span class="reg-arrow">→</span></a
-          >
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">11</div>
+            <div class="rule-text">
+              Indiscipline actions are not entertained.
+            </div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-num">12</div>
+            <div class="rule-text">
+              Referee's or organizer's decision is final.
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="form-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Participate</span>
+          <h2 class="section-title">Golden Pass Registration</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">
+            Click the button below to fill out the registration form and secure
+            your pass.
+          </p>
+          <br /><br />
+          <a href="https://forms.gle/YOUR_FORM_GOLDEN" class="form-submit"
+            >Register Now ✦</a
+          >
+          <div class="success-msg" id="goldenForm">
+            <p>
+              ✦ Registration received! We'll send confirmation to your email. ✦
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function submitForm(e, id) {
+        e.preventDefault();
+        document.getElementById(id).style.display = "block";
+        var btn = e.target.querySelector(".form-submit");
+        btn.textContent = "✦ Registered Successfully!";
+        btn.style.background = "linear-gradient(135deg, #1a5a1a, #2d8a2d)";
+        btn.style.borderColor = "#4a9a4a";
+        btn.disabled = true;
+        window.scrollTo({
+          top: document.getElementById(id).offsetTop - 120,
+          behavior: "smooth",
+        });
+      }
+      function toggleNav() {
+        var nav = document.getElementById("navLinks");
+        var btn = document.getElementById("hamburger");
+        nav.classList.toggle("open");
+        btn.classList.toggle("active");
+      }
+      // Close nav when any link is clicked
+      document.querySelectorAll(".nav-links a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          document.getElementById("navLinks").classList.remove("open");
+          document.getElementById("hamburger").classList.remove("active");
+        });
+      });
+    </script>
     <footer>
       <div class="footer-inner">
         <div class="footer-brand">
@@ -925,7 +1009,7 @@
             <li><a href="quiz.html">🧠 Quiz</a></li>
             <li><a href="codeathon.html">💻 Codeathon</a></li>
             <li><a href="treasure-hunt.html">🗺️ Treasure Hunt</a></li>
-            <li><a href="register.html">Register Now</a></li>
+            <li><a href="golden-pass.html">🏅 Golden Pass</a></li>
           </ul>
         </div>
         <div>
@@ -962,20 +1046,5 @@
         </p>
       </div>
     </footer>
-    <script>
-      function toggleNav() {
-        var nav = document.getElementById("navLinks");
-        var btn = document.getElementById("hamburger");
-        nav.classList.toggle("open");
-        btn.classList.toggle("active");
-      }
-      // Close nav when any link is clicked
-      document.querySelectorAll(".nav-links a").forEach(function (link) {
-        link.addEventListener("click", function () {
-          document.getElementById("navLinks").classList.remove("open");
-          document.getElementById("hamburger").classList.remove("active");
-        });
-      });
-    </script>
   </body>
 </html>
