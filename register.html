@@ -617,6 +617,12 @@
         gap: 1.2rem;
         transition: all 0.3s;
       }
+      /* Golden Pass card style */
+      .reg-card.golden-pass-card {
+        background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+        color: var(--stone);
+        border-left-color: var(--gold-dark);
+      }
       .reg-card:hover {
         border-left-color: var(--gold);
         transform: translateX(6px);
@@ -781,7 +787,7 @@
         </div>
         <!-- golden pass added as separate page card -->
         <div class="reg-grid">
-          <a href="golden-pass.html" class="reg-card"
+          <a href="golden-pass.html" class="reg-card golden-pass-card"
             ><span class="reg-icon">🏅</span>
             <div class="reg-info">
               <h4>Golden Pass</h4>

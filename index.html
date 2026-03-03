@@ -855,6 +855,19 @@
         cursor: pointer;
         display: block;
       }
+      /* Golden Pass highlight */
+      .event-card.golden-pass-card {
+        background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+        color: var(--stone);
+        border-color: var(--gold-dark);
+        box-shadow: 0 12px 30px rgba(201, 168, 76, 0.12);
+      }
+      .event-card.golden-pass-card .event-name {
+        color: var(--stone);
+      }
+      .event-card.golden-pass-card .event-link {
+        color: var(--stone);
+      }
       .event-card::before {
         content: "";
         position: absolute;
@@ -909,7 +922,7 @@
         color: var(--gold);
         border-color: var(--gold);
       }
-        /* (golden-pass-banner removed; see event card insertion below) */
+      /* (golden-pass-banner removed; see event card insertion below) */
       /* SCHEDULE */
       .schedule-section {
         background: var(--stone-mid);
@@ -1223,7 +1236,7 @@
         </div>
         <div class="events-grid">
           <!-- golden pass entry as its own page -->
-          <a href="golden-pass.html" class="event-card"
+          <a href="golden-pass.html" class="event-card golden-pass-card"
             ><span class="event-icon">🏅</span>
             <div class="event-name">Golden Pass</div>
             <p class="event-desc">

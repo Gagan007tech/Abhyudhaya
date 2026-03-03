@@ -712,6 +712,13 @@
         clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
         text-decoration: none;
       }
+      /* Golden Pass specific styling */
+      .golden-pass-btn {
+        background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+        color: var(--stone);
+        border-color: var(--gold-dark);
+        box-shadow: 0 8px 20px rgba(201, 168, 76, 0.12);
+      }
       .event-big-card:hover .ebc-btn {
         background: linear-gradient(135deg, var(--gold-dark), var(--gold));
         color: var(--stone);
@@ -767,7 +774,9 @@
           class="golden-pass-banner"
           style="text-align: center; margin-bottom: 1.5rem"
         >
-          <a href="register.html?pass=golden" class="btn-primary"
+          <a
+            href="register.html?pass=golden"
+            class="btn-primary golden-pass-btn"
             >Golden Pass</a
           >
         </div>
