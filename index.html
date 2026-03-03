@@ -816,10 +816,14 @@
       }
       .about-image img {
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
         height: auto;
         border-radius: 8px;
         box-shadow: 0 8px 32px rgba(201, 168, 76, 0.2);
+      }
+      /* HK logo overrides (only this image) */
+      .about-image img.hk-logo {
+        max-width: 200px;
       }
       /* EVENTS */
       .events-section {
@@ -993,8 +997,11 @@
           padding: 0 0.75rem;
         }
         .about-image img {
-          max-width: 300px;
+          max-width: 350px;
           border-radius: 6px;
+        }
+        .about-image img.hk-logo {
+          max-width: 200px;
         }
         .about-text h3 {
           font-size: 1.3rem;
@@ -1018,8 +1025,11 @@
           padding: 0.75rem;
         }
         .about-image img {
-          max-width: 250px;
+          max-width: 350px;
           border-radius: 4px;
+        }
+        .about-image img.hk-logo {
+          max-width: 160px;
         }
         .about-grid {
           gap: clamp(1.5rem, 4vw, 2rem);
@@ -1123,6 +1133,10 @@
         <ellipse cx="500" cy="440" rx="14" ry="9" opacity="0.35" />
       </svg>
       <div class="hero-content">
+        <div class="about-image">
+          <img src="./logo hk.png" alt="HKS Logo" class="hk-logo" />
+        </div>
+        <br /><br /><br />
         <p class="hero-subtitle-top">Annual Interhostel Competition</p>
         <br />
         <h1 class="hero-title">ABHY<span>U</span>DHAYA</h1>
@@ -1146,6 +1160,7 @@
           <a href="events.html" class="btn-secondary">View Events</a>
         </div>
       </div>
+      <br />
       <div class="hero-scroll">
         <span>SCROLL</span>
         <div class="scroll-line"></div>
@@ -1421,18 +1436,22 @@
           <div class="footer-contact-item">
             <span>📍</span
             ><span
-              >20/1, 3rd Cross Rd, NGO Colony, Wilson Garden, Bengaluru,
-              Karnataka-560027</span
+              >Hoysala Karnataka Sangha, 20/1, 3rd Cross Rd, NGO Colony, Wilson Garden, Bengaluru,
+                    Karnataka-560027</span
             >
           </div>
           <div class="footer-contact-item">
             <span>📧</span><span>Abhyudayahks2026@gmail.com</span>
           </div>
           <div class="footer-contact-item">
-            <span>📞</span><span>+91 98765 43210</span>
+            <span>📞</span
+            ><span
+              >Gourish - 8277725950 <br />
+              Namith - 8217752304
+            </span>
           </div>
           <div class="footer-contact-item">
-            <span>⏰</span><span>Mon–Fri, 9 AM – 6 PM</span>
+            <span>⏰</span><span>Mon–Fri, 10 AM – 5 PM</span>
           </div>
         </div>
       </div>
